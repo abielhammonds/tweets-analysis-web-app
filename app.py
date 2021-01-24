@@ -6,6 +6,14 @@ app = Flask(__name__)
 def home():
     return 'Hello World!'
 
+@app.route('/about')
+def about():
+
+    about_text = """
+    This is a Sentiment Analysis app for tweets!
+    \n Designed by: A'Biel Hammonds, Aleia Parker, Ngoc Nguyen, and Brandi Huesmann
+    """
+    return about_text
 
 if __name__=='__main__':
 
