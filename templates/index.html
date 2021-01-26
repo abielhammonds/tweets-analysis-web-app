@@ -8,6 +8,17 @@
 </head>
 
 <body>
-    <p>The argument from flask: {{my_arg}}</p>
+    <p>Put a tweet in the form below to analyze sentiment.</p>
+    <form method="POST">
+        <input name="text">
+        <input type="submit" value="get sentiment">
+    </form>
+
+    <!-- The following two paragraphs will render the variables (tweet, and sentiment)
+    Flask uses the Jinja template language to handle dynamic content.  -->
+
+    <p>Your Tweet: {{tweet}}</p>
+    <p>Sentiment: {{sentiment}}</p>
+
 </body>
 </html>
